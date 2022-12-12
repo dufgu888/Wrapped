@@ -1,0 +1,24 @@
+$collection_background_color: #202225;
+$profile_color: #ffffff;
+$profile_padding_top: 100px;
+$button-watch-edit-width: 40%;
+
+.collection {
+  background-color: $collection_background_color;
+  color: $profile_color;
+  padding-top: $profile_padding_top;
+}
+
+.card-image {
+  aspect-ratio: 3 / 2;
+}
+
+.button-watch {
+  float: left;
+  width: $button-watch-edit-width;
+}
+
+.button-edit {
+  float: right;
+  width: $button-watch-edit-width;
+}

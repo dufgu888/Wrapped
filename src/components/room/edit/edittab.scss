@@ -1,0 +1,45 @@
+$pane_height: calc(100vh - 50px);
+$pane_title_height: 20px;
+$pane_title_margin_bottom: 30px;
+$imagepane_margin: 10px;
+$imagepane_padding: 5px;
+$imagepane_height: calc(100vh - 150px);
+$savebutton_margin_right: 10px;
+$edit_row_pading_top: 50px;
+$edittab_image_width: 100%;
+$edittab_image_margin_top: 30px;
+$edittab_image_margin_bottom: 10px;
+
+.pane {
+  height: $pane_height;
+}
+
+.paneTitle {
+  height: $pane_title_height;
+  margin-bottom: $pane_title_margin_bottom;
+}
+
+.imagePane {
+  margin: $imagepane_margin;
+  padding: $imagepane_padding;
+  height: $imagepane_height;
+  overflow-y: auto;
+}
+
+.saveButton {
+  margin-right: $savebutton_margin_right;
+}
+
+.edit_row {
+  padding-top: $edit_row_pading_top;
+}
+
+.nav_link {
+  background-color: transparent !important;
+}
+
+.edittab_image {
+  width: $edittab_image_width;
+  margin-top: $edittab_image_margin_top;
+  margin-bottom: $edittab_image_margin_bottom;
+}

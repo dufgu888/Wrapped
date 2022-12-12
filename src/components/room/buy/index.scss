@@ -1,0 +1,27 @@
+$collection_background_color: #202225;
+$profile_color: #ffffff;
+$profile_padding_top: 100px;
+$title_text_big_font_size: 35px;
+$title_text_big_margin_bottom: 20px;
+$title_text_small_font_size: 17px;
+$title_text_small_margin_bottom: 70px;
+
+.collection {
+  background-color: $collection_background_color;
+  color: $profile_color;
+  padding-top: $profile_padding_top;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.title-text-big {
+  font-size: $title_text_big_font_size;
+  margin-bottom: $title_text_big_margin_bottom;
+}
+
+.title-text-small {
+  font-size: $title_text_small_font_size;
+  margin-bottom: $title_text_small_margin_bottom;
+}

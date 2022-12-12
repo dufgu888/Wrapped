@@ -1,0 +1,12 @@
+$home_button_top: 30px;
+$home_button_right: 50px;
+$home_button_height: 80px;
+$home_button_z_index: 999;
+
+.home-button {
+  position: absolute;
+  top: $home_button_top;
+  right: $home_button_right;
+  height: $home_button_height;
+  z-index: $home_button_z_index;
+}
