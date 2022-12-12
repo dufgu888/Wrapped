@@ -1,0 +1,98 @@
+.user-navbar {
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    height: 30px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta-mask {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.water-connect {
+    display: flex;
+    align-items: center;
+}
+
+.water-connect .wallet-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.globe {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.selected-language {
+    margin-right: 5px;
+    width: 45px;
+    text-align: center;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.user-dropdown-menu .sub-menu {
+    position: absolute;
+    top: 25px;
+    left: -10px;
+    background-color: black;    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 70px;
+    text-align: center;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    opacity: 0;
+    transition: opacity 0.7s;
+
+}
+
+.user-dropdown-menu.user-dropdown-open .sub-menu {
+    opacity: 1;
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
+    transition: opacity 0.7s;
+}
+
+.language-item {
+    cursor: pointer;
+}
+
+.language-item:hover {
+    background-color: grey;
+}

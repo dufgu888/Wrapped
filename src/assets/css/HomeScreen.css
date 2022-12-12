@@ -1,0 +1,98 @@
+.profile {
+    background-color: white;
+}
+
+.top {
+    padding: 5px;
+}
+
+.profile .top .museum {
+    height: 300px;
+}
+.museum .img {
+    border-radius: 4px;
+}
+.top .info {
+    height: 200px;
+    background-color: white;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+    border-radius: 4px;
+    position: relative;
+}
+
+.avatar-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    top: -75px;
+}
+
+.avatar-text .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    border: 6px solid white;
+    box-shadow: 9px 9px 68px -18px rgba(0,0,0,1);
+}
+
+.avatar-text .text {
+    top: 50%;
+    left: 50%;
+    font-size: 85px;
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+                          8px 8px #ff1f8f,
+                          20px 20px #000000;
+}
+
+.text-content {
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+.text-content .title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.middle .nft-carousel {
+    height: 250px;
+    position: relative;
+    background-color: grey;
+    display: flex;
+}
+
+.nft-carousel .next, .nft-carousel .prev {
+    position: absolute;
+    font-size: 50px;
+    /* color: black; */
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    
+}
+
+.nft-carousel .nft-element {
+    width: 25%;
+}
+.nft-element img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.next {
+    right: 0px;
+    background-image: linear-gradient(to left, rgba(255,255,255,1), rgba(0,0,0,0));
+}
+
+.prev {
+    left: 0px;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0));
+}
