@@ -63,8 +63,8 @@
 .middle .nft-carousel {
     height: 250px;
     position: relative;
-    background-color: grey;
     display: flex;
+    overflow: hidden;
 }
 
 .nft-carousel .next, .nft-carousel .prev {
@@ -80,10 +80,11 @@
 }
 
 .nft-carousel .nft-element {
-    width: 25%;
+    min-width: 25%;
+    margin: 3px;
 }
 .nft-element img {
-    border-radius: 6px;
+    border-radius: 4px;
 }
 .next {
     right: 0px;

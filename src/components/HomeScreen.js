@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/css/HomeScreen.css";
-import MuseumImg from "../assets/images/museum1.jpg";
 import avatar from "../assets/images/1.jpg";
 import { TbChevronRight, TbChevronLeft } from "react-icons/tb";
 import Img1 from "../assets/images/1.jpg";
@@ -54,6 +53,24 @@ const HomeScreen = () => {
 					</div>
 					<div className="nft-element">
 						<img src={Img4} alt="" />
+					</div>
+					<div className="nft-element">
+						<img src={Img5} alt="" />
+					</div>
+					<div className="nft-element">
+						<img src={Img6} alt="" />
+					</div>
+					<div className="nft-element">
+						<img src={Img7} alt="" />
+					</div>
+					<div className="nft-element">
+						<img src={Img8} alt="" />
+					</div>
+					<div className="nft-element">
+						<img src={Img9} alt="" />
+					</div>
+					<div className="nft-element">
+						<img src={Img10} alt="" />
 					</div>
 
 					<div className="next">
