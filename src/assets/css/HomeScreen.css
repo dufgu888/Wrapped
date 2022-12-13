@@ -68,11 +68,9 @@
 
 .middle .nft-carousel {
     height: 250px;
-    perspective: 1200px;
     display: flex;
     transition: all 250ms linear;
     width: 250%;
-
     
     
 }
@@ -95,6 +93,8 @@
     margin: 3px;
     transform-style: preserve-3d; 
     transition: all 250ms linear;
+    perspective: 1200px;
+
 }
 .nft-element img {
     border-radius: 4px;
@@ -109,10 +109,10 @@
     background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0));
 }
 
-.nft-carousel .nft-element:nth-child(1) {
+.nft-carousel .nft-element:nth-child(1) img{
     transform: rotateY(-15deg);
 }
 
-.nft-carousel .nft-element:nth-child(4) {
+.nft-carousel .nft-element:nth-child(4) img{
     transform: rotateY(15deg);
 }
