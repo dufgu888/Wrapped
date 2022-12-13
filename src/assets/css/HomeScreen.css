@@ -60,14 +60,24 @@
     font-weight: 700;
 }
 
-.middle .nft-carousel {
-    height: 250px;
-    position: relative;
-    display: flex;
+.middle {
     overflow: hidden;
+    position: relative;
+    transition: all 250ms linear;
 }
 
-.nft-carousel .next, .nft-carousel .prev {
+.middle .nft-carousel {
+    height: 250px;
+    perspective: 1200px;
+    display: flex;
+    transition: all 250ms linear;
+    width: 250%;
+
+    
+    
+}
+
+.middle .next, .middle .prev {
     position: absolute;
     font-size: 50px;
     /* color: black; */
@@ -76,12 +86,15 @@
     display: flex;
     align-items: center;
     width: 50px;
-    
+    top:0px;
 }
 
-.nft-carousel .nft-element {
-    min-width: 25%;
+
+.nft-carousel .nft-element {    
+    width: 25%;
     margin: 3px;
+    transform-style: preserve-3d; 
+    transition: all 250ms linear;
 }
 .nft-element img {
     border-radius: 4px;
@@ -94,4 +107,12 @@
 .prev {
     left: 0px;
     background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0));
+}
+
+.nft-carousel .nft-element:nth-child(1) {
+    transform: rotateY(-15deg);
+}
+
+.nft-carousel .nft-element:nth-child(4) {
+    transform: rotateY(15deg);
 }

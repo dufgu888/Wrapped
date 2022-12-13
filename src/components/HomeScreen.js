@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "../assets/css/HomeScreen.css";
 import avatar from "../assets/images/1.jpg";
 import { TbChevronRight, TbChevronLeft } from "react-icons/tb";
@@ -16,6 +16,9 @@ import Room1 from "./room/sandbox/room1";
 // import Romm
 
 const HomeScreen = () => {
+	const carousel = useRef(null);
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [length, setLength] = useState(10);
 	return (
 		<div className="profile">
 			<div className="top">
@@ -41,7 +44,10 @@ const HomeScreen = () => {
 				</div>
 			</div>
 			<div className="middle">
-				<div className="nft-carousel">
+				<div
+					className="nft-carousel"
+					ref={carousel}
+					style={{ transform: `translateX(-${currentIndex * 10}%)` }}>
 					<div className="nft-element">
 						<img src={Img1} alt="" />
 					</div>
@@ -72,13 +78,20 @@ const HomeScreen = () => {
 					<div className="nft-element">
 						<img src={Img10} alt="" />
 					</div>
-
-					<div className="next">
-						<TbChevronRight />
-					</div>
-					<div className="prev">
-						<TbChevronLeft />
-					</div>
+				</div>
+				<div
+					className="next"
+					onClick={(e) => {
+						setCurrentIndex((index) => (index + 1) % 10);
+					}}>
+					<TbChevronRight />
+				</div>
+				<div
+					className="prev"
+					onClick={(e) => {
+						setCurrentIndex((index) => (index - 1) % 10);
+					}}>
+					<TbChevronLeft />
 				</div>
 				<div></div>
 			</div>
