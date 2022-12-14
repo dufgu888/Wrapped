@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../assets/css/Navbar.css";
 import { BsGlobe2 } from "react-icons/bs";
 import MetaMaskIcon from "../assets/images/metamask.png";
-import WalletIcon from "../assets/images/wallet.png";
+import WalletConnectIcon from "../assets/images/walletconnect.png";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import Logo from "../assets/images/logo.jpg";
 
@@ -56,9 +56,9 @@ const Navbar = () => {
 				<div className="meta-mask">
 					<img src={MetaMaskIcon} alt="" />
 				</div>
-				<div className="water-connect">
+				<div className="wallet-connect">
 					<div className="wallet-icon">
-						<img src={WalletIcon} alt="" />
+						<img src={WalletConnectIcon} alt="" />
 					</div>
 					<div className="fs-5">Connect wallet</div>
 				</div>

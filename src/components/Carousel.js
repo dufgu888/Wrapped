@@ -12,7 +12,7 @@ const Carousel = ({ children, items }) => {
 				{children}
 			</div>
 			<div
-				className="absolute right-0 z-5 h-[100%] top-0 flex flex-col justify-center bg-gradient-to-l from-[#ffffffff] to-[#00000000] text-white w-[50px] items-center"
+				className="absolute right-0 z-5 h-[100%] top-0 flex flex-col justify-center bg-gradient-to-l from-[#ffffffff] to-[#00000000] text-white w-[50px] items-center text-[50px]"
 				onClick={(e) => {
 					setCurrentIndex((index) => {
 						if (index < len - items) return (index + 1) % len;
@@ -22,7 +22,7 @@ const Carousel = ({ children, items }) => {
 				<TbChevronRight />
 			</div>
 			<div
-				className="absolute left-0 z-5 h-[100%] top-0 flex flex-col justify-center bg-gradient-to-l to-[#ffffffff] from-[#00000000] text-white w-[50px] items-center"
+				className="absolute left-0 z-5 h-[100%] top-0 flex flex-col justify-center bg-gradient-to-l to-[#ffffffff] from-[#00000000] text-white w-[50px] items-center text-[50px]"
 				onClick={(e) => {
 					setCurrentIndex((index) => {
 						if (index > 0) return (index - 1) % len;
