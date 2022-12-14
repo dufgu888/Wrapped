@@ -13,6 +13,8 @@ import Img8 from "../assets/images/8.jpg";
 import Img9 from "../assets/images/9.jpg";
 import Img10 from "../assets/images/10.jpg";
 import Room1 from "./room/sandbox/room1";
+import Carousel from "./Carousel";
+import Item from "./CarouselItem";
 // import Romm
 
 const HomeScreen = () => {
@@ -43,58 +45,36 @@ const HomeScreen = () => {
 					</div>
 				</div>
 			</div>
-			<div className="middle">
-				<div
-					className="nft-carousel"
-					ref={carousel}
-					style={{ transform: `translateX(-${currentIndex * 10}%)` }}>
-					<div className="nft-element">
-						<img src={Img1} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img2} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img3} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img4} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img5} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img6} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img7} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img8} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img9} alt="" />
-					</div>
-					<div className="nft-element">
-						<img src={Img10} alt="" />
-					</div>
-				</div>
-				<div
-					className="next"
-					onClick={(e) => {
-						setCurrentIndex((index) => (index + 1) % 10);
-					}}>
-					<TbChevronRight />
-				</div>
-				<div
-					className="prev"
-					onClick={(e) => {
-						setCurrentIndex((index) => (index - 1) % 10);
-					}}>
-					<TbChevronLeft />
-				</div>
-				<div></div>
-			</div>
+			<Carousel items={4}>
+				<Item width={25}>
+					<img src={Img2} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img3} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img3} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img5} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img6} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img7} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img8} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img9} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img10} alt="" />
+				</Item>
+			</Carousel>
+
 			<div className="bottom"></div>
 		</div>
 	);

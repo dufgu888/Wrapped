@@ -109,10 +109,12 @@
     background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0));
 }
 
-.nft-carousel .nft-element:nth-child(1) img{
-    transform: rotateY(-15deg);
+/* .nft-carousel .nft-element:nth-child(1) img{
+    transform: rotateY(-25deg);
+    scale: 0.93;
 }
 
 .nft-carousel .nft-element:nth-child(4) img{
-    transform: rotateY(15deg);
-}
+    transform: rotateY(25deg);
+    scale: 0.93;
+} */
