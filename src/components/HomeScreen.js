@@ -15,14 +15,16 @@ import Img10 from "../assets/images/10.jpg";
 import Room1 from "./room/sandbox/room1";
 import Carousel from "./Carousel";
 import Item from "./CarouselItem";
-import ReactGridLayout, { WidthProvider } from "react-grid-layout";
+
+import { Responsive, WidthProvider } from "react-grid-layout";
 
 const HomeScreen = () => {
-	const layout = [
-		{ i: "a", x: 0, y: 0, w: 4, h: 2 },
-		{ i: "b", x: 1, y: 3, w: 4, h: 2, minW: 2, maxW: 4 },
-		{ i: "c", x: 4, y: 5, w: 4, h: 2 },
-	];
+	const ResponsiveGridLayout = WidthProvider(Responsive);
+	// const layouts = [
+	// 	{ i: "1", x: 0, y: 0, w: 12, h: 1 },
+	// 	{ i: "2", x: 0, y: 2, w: 12, h: 1 },
+	// 	{ i: "3", x: 0, y: 3, w: 12, h: 1 },
+	// ];
 	return (
 		<div className="profile">
 			<div className="top">
@@ -76,23 +78,65 @@ const HomeScreen = () => {
 					<img src={Img10} alt="" />
 				</Item>
 			</Carousel>
-
+			<div className="featured"></div>
 			<div className="bottom">
-				<ReactGridLayout
-					className="layout"
-					layout={layout}
-					cols={12}
-					rowHeight={30}>
-					<div key="a" className="bg-black">
-						a
+				<ResponsiveGridLayout
+					// layouts={layouts}
+					autoSize={true}
+					rowHeight={200}
+					isBounded={true}
+					maxRows={2}
+					breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+					cols={{ lg: 12, md: 12, sm: 12, xs: 4, xxs: 4 }}>
+					<div
+						className="grid-item"
+						key="1"
+						data-grid={{ x: 0, y: 0, w: 3, h: 1, maxH: 2 }}>
+						<img src={Img1} alt="" />
 					</div>
-					<div key="b" className="bg-black">
-						b
+					<div
+						className="grid-item"
+						key="2"
+						data-grid={{ x: 3, y: 0, w: 3, h: 1 }}>
+						<img src={Img2} alt="" />
 					</div>
-					<div key="c" className="bg-black">
-						c
+					<div
+						className="grid-item"
+						key="3"
+						data-grid={{ x: 6, y: 0, w: 3, h: 1, maxH: 2 }}>
+						<img src={Img3} alt="" />
 					</div>
-				</ReactGridLayout>
+					<div
+						className="grid-item"
+						key="4"
+						data-grid={{ x: 9, y: 0, w: 3, h: 1 }}>
+						<img src={Img9} alt="" />
+					</div>
+					<div
+						className="grid-item"
+						key="5"
+						data-grid={{ x: 0, y: 1, w: 3, h: 1 }}>
+						<img src={Img5} alt="" />
+					</div>
+					<div
+						className="grid-item"
+						key="6"
+						data-grid={{ x: 3, y: 1, w: 3, h: 1 }}>
+						<img src={Img6} alt="" />
+					</div>
+					<div
+						className="grid-item"
+						key="7"
+						data-grid={{ x: 6, y: 1, w: 3, h: 1 }}>
+						<img src={Img7} alt="" />
+					</div>
+					<div
+						className="grid-item"
+						key="8"
+						data-grid={{ x: 9, y: 1, w: 3, h: 1 }}>
+						<img src={Img8} alt="" />
+					</div>
+				</ResponsiveGridLayout>
 			</div>
 		</div>
 	);
