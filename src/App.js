@@ -1,5 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-grid-layout/css/styles.css";
+import "react-resizable/css/styles.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomeScreen from "./components/HomeScreen";

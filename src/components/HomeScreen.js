@@ -15,12 +15,14 @@ import Img10 from "../assets/images/10.jpg";
 import Room1 from "./room/sandbox/room1";
 import Carousel from "./Carousel";
 import Item from "./CarouselItem";
-// import Romm
+import ReactGridLayout, { WidthProvider } from "react-grid-layout";
 
 const HomeScreen = () => {
-	const carousel = useRef(null);
-	const [currentIndex, setCurrentIndex] = useState(0);
-	const [length, setLength] = useState(10);
+	const layout = [
+		{ i: "a", x: 0, y: 0, w: 4, h: 2 },
+		{ i: "b", x: 1, y: 3, w: 4, h: 2, minW: 2, maxW: 4 },
+		{ i: "c", x: 4, y: 5, w: 4, h: 2 },
+	];
 	return (
 		<div className="profile">
 			<div className="top">
@@ -75,7 +77,23 @@ const HomeScreen = () => {
 				</Item>
 			</Carousel>
 
-			<div className="bottom"></div>
+			<div className="bottom">
+				<ReactGridLayout
+					className="layout"
+					layout={layout}
+					cols={12}
+					rowHeight={30}>
+					<div key="a" className="bg-black">
+						a
+					</div>
+					<div key="b" className="bg-black">
+						b
+					</div>
+					<div key="c" className="bg-black">
+						c
+					</div>
+				</ReactGridLayout>
+			</div>
 		</div>
 	);
 };
