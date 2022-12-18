@@ -11,9 +11,10 @@ function App() {
 	return (
 		<Router>
 			<Navbar />
-			<Routes>
+			<HomeScreen />
+			{/* <Routes>
 				<Route path="/" element={<HomeScreen />} />
-			</Routes>
+			</Routes> */}
 			<Footer />
 		</Router>
 	);
