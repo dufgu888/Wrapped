@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/olek/static/css/main.a55ed96d.css",
-    "main.js": "/olek/static/js/main.c275c32b.js",
+    "main.js": "/olek/static/js/main.60df0d1d.js",
     "static/media/walletconnect.png": "/olek/static/media/walletconnect.13798276a43e02957131.png",
     "static/media/metamask.png": "/olek/static/media/metamask.50ecda6a9ca442e354cd.png",
     "static/media/logo.jpg": "/olek/static/media/logo.e7378e64441f1b32c636.jpg",
@@ -9,10 +9,10 @@
     "static/media/9.jpg": "/olek/static/media/9.049b79721777b794b6a5.jpg",
     "index.html": "/olek/index.html",
     "main.a55ed96d.css.map": "/olek/static/css/main.a55ed96d.css.map",
-    "main.c275c32b.js.map": "/olek/static/js/main.c275c32b.js.map"
+    "main.60df0d1d.js.map": "/olek/static/js/main.60df0d1d.js.map"
   },
   "entrypoints": [
     "static/css/main.a55ed96d.css",
-    "static/js/main.c275c32b.js"
+    "static/js/main.60df0d1d.js"
   ]
 }

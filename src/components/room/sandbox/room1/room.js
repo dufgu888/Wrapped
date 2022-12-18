@@ -8,7 +8,7 @@ export const Room = (props) => {
 	const controls = useControls();
 	const rotate = useInfiniRotate();
 
-	const gltf = useLoader(GLTFLoader, `/model/${props.name}`);
+	const gltf = useLoader(GLTFLoader, `olek/model/${props.name}`);
 
 	useFrame((state) => {
 		const { forward, backward, left, right } = controls.current;
