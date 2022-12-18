@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.08d07ea8.css",
+    "main.css": "/static/css/main.a55ed96d.css",
     "main.js": "/static/js/main.ced23bb7.js",
     "static/media/walletconnect.png": "/static/media/walletconnect.13798276a43e02957131.png",
     "static/media/metamask.png": "/static/media/metamask.50ecda6a9ca442e354cd.png",
@@ -8,11 +8,11 @@
     "static/media/6.jpg": "/static/media/6.2fc64d0b3c7ce451681c.jpg",
     "static/media/9.jpg": "/static/media/9.049b79721777b794b6a5.jpg",
     "index.html": "/index.html",
-    "main.08d07ea8.css.map": "/static/css/main.08d07ea8.css.map",
+    "main.a55ed96d.css.map": "/static/css/main.a55ed96d.css.map",
     "main.ced23bb7.js.map": "/static/js/main.ced23bb7.js.map"
   },
   "entrypoints": [
-    "static/css/main.08d07ea8.css",
+    "static/css/main.a55ed96d.css",
     "static/js/main.ced23bb7.js"
   ]
 }
