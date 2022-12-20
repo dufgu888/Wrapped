@@ -3,7 +3,7 @@ import "../assets/css/HomeScreen.css";
 import avatar from "../assets/images/1.jpg";
 import { TbChevronRight, TbChevronLeft } from "react-icons/tb";
 import Img1 from "../assets/images/1.jpg";
-import Img2 from "../assets/images/2.png";
+import Img2 from "../assets/images/2.jpg";
 import Img3 from "../assets/images/3.jpg";
 import Img4 from "../assets/images/4.jpg";
 import Img5 from "../assets/images/5.jpg";
@@ -12,6 +12,17 @@ import Img7 from "../assets/images/7.jpg";
 import Img8 from "../assets/images/8.jpg";
 import Img9 from "../assets/images/9.jpg";
 import Img10 from "../assets/images/10.jpg";
+import Img11 from "../assets/images/11.jpg";
+import Img12 from "../assets/images/12.jpg";
+import Img13 from "../assets/images/13.jpg";
+import Img14 from "../assets/images/14.jpg";
+import Img15 from "../assets/images/15.jpg";
+import Img16 from "../assets/images/16.jpg";
+import Img17 from "../assets/images/17.jpg";
+import Img18 from "../assets/images/18.jpg";
+import Img19 from "../assets/images/19.jpg";
+import Img20 from "../assets/images/20.jpg";
+import Img21 from "../assets/images/21.jpg";
 import Room1 from "./room/sandbox/room1";
 import Carousel from "./Carousel";
 import Item from "./CarouselItem";
@@ -51,13 +62,16 @@ const HomeScreen = () => {
 			</div>
 			<Carousel items={4}>
 				<Item width={25}>
+					<img src={Img1} alt="" />
+				</Item>
+				<Item width={25}>
 					<img src={Img2} alt="" />
 				</Item>
 				<Item width={25}>
 					<img src={Img3} alt="" />
 				</Item>
 				<Item width={25}>
-					<img src={Img3} alt="" />
+					<img src={Img4} alt="" />
 				</Item>
 				<Item width={25}>
 					<img src={Img5} alt="" />
@@ -76,6 +90,39 @@ const HomeScreen = () => {
 				</Item>
 				<Item width={25}>
 					<img src={Img10} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img11} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img12} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img13} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img14} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img15} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img16} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img17} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img18} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img19} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img20} alt="" />
+				</Item>
+				<Item width={25}>
+					<img src={Img21} alt="" />
 				</Item>
 			</Carousel>
 			<div className="featured"></div>
