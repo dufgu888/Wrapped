@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../assets/css/Navbar.css";
 import { BsGlobe2 } from "react-icons/bs";
 import MetaMaskIcon from "../assets/images/metamask.png";
-import WalletConnectIcon from "../assets/images/walletconnect.png";
+import WalletConnectIcon from "../assets/images/WalletConnect.svg";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import Logo from "../assets/images/logo.jpg";
 

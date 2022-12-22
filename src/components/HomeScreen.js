@@ -1,7 +1,11 @@
 import React, { useRef, useState } from "react";
 import "../assets/css/HomeScreen.css";
+import Room1 from "./room/sandbox/room1";
+import Carousel from "./Carousel";
+import Item from "./CarouselItem";
+import EditRoom from "./room/edit";
+
 import avatar from "../assets/images/1.jpg";
-import { TbChevronRight, TbChevronLeft } from "react-icons/tb";
 import Img1 from "../assets/images/1.jpg";
 import Img2 from "../assets/images/2.jpg";
 import Img3 from "../assets/images/3.jpg";
@@ -23,25 +27,18 @@ import Img18 from "../assets/images/18.jpg";
 import Img19 from "../assets/images/19.jpg";
 import Img20 from "../assets/images/20.jpg";
 import Img21 from "../assets/images/21.jpg";
-import Room1 from "./room/sandbox/room1";
-import Carousel from "./Carousel";
-import Item from "./CarouselItem";
 
 import { Responsive, WidthProvider } from "react-grid-layout";
 
 const HomeScreen = () => {
 	const ResponsiveGridLayout = WidthProvider(Responsive);
-	// const layouts = [
-	// 	{ i: "1", x: 0, y: 0, w: 12, h: 1 },
-	// 	{ i: "2", x: 0, y: 2, w: 12, h: 1 },
-	// 	{ i: "3", x: 0, y: 3, w: 12, h: 1 },
-	// ];
 	return (
 		<div className="profile">
 			<div className="top">
 				<div className="museum">
 					{/* <img src={MuseumImg} alt="" /> */}
-					<Room1 />
+					{/* <Room1 /> */}
+					<EditRoom />
 				</div>
 				<div className="info">
 					<div className="avatar-text">
