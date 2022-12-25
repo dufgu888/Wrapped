@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 // import authenticationReducer from "./authentication/authenticationReducer";
-// import roomReducer from "./room/roomReducers";
+import roomReducer from "./roomReducers";
 import selectedNFTReducer from "./selectedNFTReducers";
 // import walletReducer from "./wallet/walletReducers";
 // import setAuthToken from "../utils/setAuthToken";
@@ -11,7 +11,7 @@ import selectedNFTReducer from "./selectedNFTReducers";
 
 const rootReducer = combineReducers({
 	// authentication: authenticationReducer,
-	// room: roomReducer,
+	room: roomReducer,
 	selectedNFT: selectedNFTReducer,
 	// wallet: walletReducer,
 	// blockchain: blockchainReducer,

@@ -1,6 +1,7 @@
 img {
 	width: 100% !important;
 	height: 100% !important;
+	vertical-align: unset !important;
 }
 
 ul {
@@ -13,6 +14,27 @@ ul {
 	.avatar-text .text {
 		font-size: 60px !important;
 	}
+}
+
+.main {
+	margin-top: 51px;
+	height: calc(100vh - 51px);
+	display: flex;
+}
+
+.main .main-content {
+	height: 100%;
+	overflow-y: auto;
+	flex: auto;
+	width: 80%;
+}
+
+.flex-auto {
+	flex: auto;
+}
+
+.main .main-content.active-sidebar {
+	width: calc(100% - 40px);
 }
 
 ::-webkit-scrollbar {

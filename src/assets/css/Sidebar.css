@@ -1,0 +1,125 @@
+.user-sidebar-container {
+	width: 20%;
+	background-color: white;
+	padding: 10px 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.user-sidebar-container .user-dropdown-menu .sub-menu {
+	position: absolute;
+	top: 42px;
+	background-color: white;
+	width: 100%;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	opacity: 0;
+	transition: opacity 0.7s;
+	z-index: 1;
+}
+.user-sidebar-container .user-dropdown-menu.user-dropdown-open .sub-menu {
+	opacity: 1;
+	max-height: 500px;
+	transition: max-height 0.3s ease-in;
+	transition: opacity 0.7s;
+}
+
+.chain-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: auto;
+}
+.chain-item {
+	cursor: pointer;
+}
+
+.chain-item:hover {
+	background-color: lightgrey;
+}
+
+.chain-name {
+	font-size: 20px;
+}
+
+.user-sidebar-container.active-sidebar .chain-name {
+	display: none;
+}
+
+.user-sidebar-container .chain-select {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.chain-icon {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.user-sidebar-container.active-sidebar .chain-icon {
+	margin-right: 0px;
+}
+
+.user-sidebar-container.active-sidebar {
+	width: 80px;
+}
+
+.user-sidebar-container .middle {
+	border: 1px solid black;
+	border-radius: 6px;
+	width: 100%;
+	flex: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.middle .middle-content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+}
+.user-sidebar-container.active-sidebar .middle .middle-content {
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.middle-content > div {
+	width: 70px;
+	height: 70px;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.middle-content > div > img {
+	border-radius: 4px;
+}
+
+@media (max-width: 1500px) {
+	.middle .middle-content {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 1150px) {
+	.middle .middle-content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 780px) {
+	.middle .middle-content {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.chain-name {
+		display: none;
+	}
+}

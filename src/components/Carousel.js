@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TbChevronRight, TbChevronLeft } from "react-icons/tb";
+
 const Carousel = ({ children, items }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const len = children.length;
