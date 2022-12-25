@@ -87,7 +87,7 @@ const Sidebar = (props) => {
 										}}
 										className="chain-item">
 										<div className="flex-auto d-flex align-items-center justify-content-center">
-											<div className="d-flex" style={{ width: "130px" }}>
+											<div className="d-flex">
 												<div className="chain-icon">
 													<img src={item.icon} alt="" />
 												</div>
