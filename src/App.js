@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import HomeScreen from "./components/HomeScreen";
