@@ -1,3 +1,6 @@
+:root {
+	--color-gray: #665e6e;
+}
 img {
 	width: 100% !important;
 	height: 100% !important;

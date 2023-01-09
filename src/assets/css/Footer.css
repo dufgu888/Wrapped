@@ -1,37 +1,44 @@
-.footer {
-    background-color: black;
-    text-align: center;
-    padding: 8px;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-  }
+.footer-start {
+	background: -webkit-rgb(10, 2, 37);
+	background: -o-rgb(10, 2, 37);
+	background: -ms-rgb(10, 2, 37);
+	background: -moz-rgb(10, 2, 37);
+	background: rgb(10, 2, 37);
+}
+.footer-end {
+	background: -webkit-rgb(28, 18, 35);
+	background: -o-rgb(28, 18, 35);
+	background: -ms-rgb(28, 18, 35);
+	background: -moz-rgb(28, 18, 35);
+	background: rgb(28, 18, 35);
+	text-align: center;
+	padding: 15px 20px;
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
 
-  .footer-left .item-link {
-    border-right: 2px solid white;
-    padding:0px 10px;
-    cursor: pointer;
-  }
+.footer-left .item-link {
+	padding: 0px 10px;
+	cursor: pointer;
+	color: var(--color-gray);
+}
 
-  .footer-left .item-link.last {
-    border-right: none;
-  }
+.footer-right div {
+	cursor: pointer;
+}
 
-  .footer-right div {
-    cursor: pointer;
-  }
+.footer-right .link-btn {
+	border: 2px solid white;
+	padding: 3px 6px;
+	margin-right: 8px;
+	border-radius: 4px;
+}
 
-  .footer-right .link-btn {
-    border: 2px solid white;
-    padding: 3px 6px;
-    margin-right: 8px;
-    border-radius: 4px;
-  }
-
-  .footer-right .link-btn:hover {
-    background-color: rgba(255 ,255 ,255 ,0.8);
-    color: blue;
-  }
+.footer-right .link-btn:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: blue;
+}
